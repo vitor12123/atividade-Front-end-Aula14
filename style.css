@@ -1,0 +1,14 @@
+body {
+    background-color: #282828;
+}
+header, footer {
+    background-color: #2575fc;
+    color: #fff;
+}
+form {
+    background: #ffffff;
+}
+    span i {
+    color: #fff;
+    font-size: 1.5rem;
+}
