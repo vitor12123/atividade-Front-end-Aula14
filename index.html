@@ -1,13 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OutFront Restaurante</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+    }
+
+    header {
+      background: #2575cf;
+      padding: 35px 70px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p, .hero h4 {
+      max-width: 500px;
+    }
+
+    .menu {
+      padding: 40px 20px;
+    }
+
+    .menu h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f5f5f5;
+      color: black;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #f0f0f0;
+      margin-top: 30px;
+      color: black;
+    }
+  </style>
 </head>
 <body>
-    <header>Restaurante</header>
-    
+  <header>
+    <nav>
+      <h1>OutFront</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cardápio</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bem-vindo ao OutFront</h1>
+    <h4>Mais que comida! Uma experiência feita para você</h4>
+  </section>
+
+  <section class="menu">
+    <h2>Experiência OutFront</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Ambiente acolhedor">
+        <h3>Ambiente Acolhedor</h3>
+        <p>Desfrute de um espaço pensado para seu conforto e bem-estar.</p>
+      </div>
+      <div class="card">
+      <h3>Sabores Únicos</h3>
+        <p>Pratos preparados com ingredientes frescos e muito carinho.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Atendimento especial">
+        <h3>Atendimento Especial</h3>
+        <p>Nosso time está sempre pronto para tornar sua experiência memorável.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OutFront Restaurante</p>
+  </footer>
 </body>
 </html>
